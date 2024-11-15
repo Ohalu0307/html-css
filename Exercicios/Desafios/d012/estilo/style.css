@@ -1,9 +1,64 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-body {
-    background-color:rgb(77, 5, 5);
+* {
+   margin: 0px; /*faz com que os elementos fiquem todos grudados*/
+   padding: 0px;/*faz com que os elementos fiquem todos grudados*/
+   }
+
+   html, body {
+       min-height: 100vh;/*tamanho minimo da altura do corpo vai ser 100%*/
+       background-color: darkgray;/* cor do fundo do corpo do site fica cinza*/
+   }
+
+   header {
+       background-color: black; /*cor do fundo preto*/
+       color: white; /*cor do texto branco */
+       text-align: center; /*colocar o texto no centro*/
+   }
+
+   h1 {
+      padding-top: 50px;/*um espaco de 50px na part de cima do h1*/
+      font-variant: small-caps;/*o h1 em maiusculo*/
+   }
+   header > p {
+    padding-bottom: 50px;/*um espaco de 50px na part de baixo do paragrafo*/
+    
+   }
+
+   a {
+    color: white;/*cor do link branco*/
+    text-decoration: none;/*Tirar o Sublinhado do texto*/
+    font-weight: bolder;/*colocar em negrito*/
 }
+ 
+  a:hover {
+     text-decoration: underline; /*Faz com que quando passar o mouse ele fique sublinhado */
 
-h1 {
-    background-color: blue;
+  }
+
+  section {
+      padding-top: 10vh;/*Faz com que ganhe 10% de espaco na altura do texto */
+      padding-bottom: 10vh;/*Faz com que ganhe 10% de espaco na parte de baixo do texto */
+      line-height: 2em;/*cria um espaco entre o texto*/
+      padding-left: 30px;/*da um espaco a esquerda de 30px no texto*/
+
+  }
+  section.normal {
+          background-color: white; /*Fundo branco*/
+          color: black;/*letra preta*/
+  }
+
+  section.imagem {
+        background-color: rgb(51, 51, 51);/*fundo cinza escuro*/
+        color: white;/*letra branca*/
+  }
+
+  section.imagem > p {
+         width: 400px;
+          background-color: rgba(0, 0, 0, 0.253);
+  }
+  footer {
+        background-color: black;/*Cor do fundo do rodape preto*/
+        text-align: center;/*texto do rodape no centro*/
+        padding: 10px;/*um espaco de 10px nos 4 canto do rodape*/
 }
