@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+     --fonte1:Verdana, Geneva, Tahoma, sans-sefif; 
+     --fonte2:"Passion One", sans-serif;
+     --fonte3:"Sriracha", cursive;
+}
 * {
    margin: 0px; /*faz com que os elementos fiquem todos grudados*/
    padding: 0px;/*faz com que os elementos fiquem todos grudados*/
+   
    }
 
    html, body {
        min-height: 100vh;/*tamanho minimo da altura do corpo vai ser 100%*/
        background-color: darkgray;/* cor do fundo do corpo do site fica cinza*/
+       font-family: var(--fonte1);
    }
 
    header {
@@ -19,6 +30,8 @@
    h1 {
       padding-top: 50px;/*um espaco de 50px na part de cima do h1*/
       font-variant: small-caps;/*o h1 em maiusculo*/
+      font-family: var(--fonte2);
+      font-size: 10vw;
    }
    header > p {
     padding-bottom: 50px;/*um espaco de 50px na part de baixo do paragrafo*/
@@ -41,7 +54,12 @@
       padding-bottom: 10vh;/*Faz com que ganhe 10% de espaco na parte de baixo do texto */
       line-height: 2em;/*cria um espaco entre o texto*/
       padding-left: 30px;/*da um espaco a esquerda de 30px no texto*/
+      font-family: var(--fonte3);
+      font-size: 3.5vw;
+  }
 
+  section > p {
+        padding-bottom: 2em; /*Da um espacamento no paragrafo*/
   }
   section.normal {
           background-color: white; /*Fundo branco*/
@@ -51,11 +69,30 @@
   section.imagem {
         background-color: rgb(51, 51, 51);/*fundo cinza escuro*/
         color: white;/*letra branca*/
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+        background-attachment: fixed;
   }
 
   section.imagem > p {
-         width: 400px;
-          background-color: rgba(0, 0, 0, 0.253);
+         /**width: 400px;faz uma largura de 400px*/
+         display: inline-block;/*Cria uma caixa em volta do texto*/
+          background-color: rgba(0, 0, 0, 0.514);
+          padding: 5px;
+          text-shadow: 1px 1px 0px black;/*cria uma sombra no texto*/
+  }
+
+  section#img01{
+        background-image: url('../imagens/background001.jpg');
+        background-position: right center;/*mostra qual a parte da imagem que eu quero que apareca*/
+        background-size: cover;/*diminui a imagem pra nao ficar tao gigante*/
+
+  }
+
+
+  section#img02 {
+          background-image: url('../imagens/background002.jpg');
+          background-size: cover;/*diminui a imagem pra nao ficar tao gigante*/
+
   }
   footer {
         background-color: black;/*Cor do fundo do rodape preto*/
